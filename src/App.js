@@ -26,7 +26,7 @@ function App() {
     <>
     <div className="App">
       <h1>Autores</h1>
-      <form onSubmit={onSubmitForm} style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+      <form onSubmit={onSubmitForm} style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent: 'space-around', height: '150px'}}>
         <label>Ingresa tu nombre</label>
         <input type="text" onChange={(event) => setUsuario({...usuario, nombre: event.target.value})}/>
 
